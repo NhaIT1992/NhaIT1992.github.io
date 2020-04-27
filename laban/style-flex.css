@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+li {
+	list-style-type: none;
+}
+.smallOrders {
+	width: 980px;
+	margin: 20px auto;
+}
+.smallOrders .title {
+	border-bottom: 1px solid #00ACC1;
+}
+.smallOrders .title h4 {
+	display: inline-block;
+	background: #00ACC1;
+	color: white;
+	font-weight: normal;
+	padding: 3px 10px;
+}
+.smallOrders ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 10px;
+}
+.smallOrders ul li {
+	width: 25%;
+	height: 40px;
+	line-height: 40px;
+	background-image: url(ic_cate_small.png);
+	background-repeat: no-repeat;
+}
+.smallOrders ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 8px 0px;
+	padding-left: 30px;
+}
+.smallOrders ul li a:hover {
+	color: #00ACC1;
+	font-weight: 600;
+}
+.smallOrders ul li:nth-child(1) {
+	background-position: 0px -572px;
+}
+.smallOrders ul li:nth-child(2) {
+	background-position: 0px -2302px;
+}
+.smallOrders ul li:nth-child(3) {
+	background-position: 0px -258px;
+}
+.smallOrders ul li:nth-child(4) {
+	background-position: 0px -310px;
+}
+.smallOrders ul li:nth-child(5) {
+	background-position: 0px -2224px;
+}
+.smallOrders ul li:nth-child(6) {
+	background-position: 0px -2344px;
+}
+.smallOrders ul li:nth-child(7) {
+	background-position: 0px -2136px;
+}
+.smallOrders ul li:nth-child(8) {
+	background-position: 0px -2262px;
+}
+.smallOrders ul li:nth-child(9) {
+	background-position: 0px -2052px;
+}
+.smallOrders ul li:nth-child(10) {
+	background-position: 0px -2098px;
+}
+.smallOrders ul li:nth-child(11) {
+	background-position: 0px -2885px;
+}
+.smallOrders ul li:nth-child(12) {
+	background-position: 0px -1553px;
+}
+.smallOrders ul li:nth-child(13) {
+	background-position: 0px -1240px;
+}
