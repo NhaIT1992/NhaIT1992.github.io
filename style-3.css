@@ -3,6 +3,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	display: flex;
+	flex-direction: column;
+}
 header {
 	height: 40px;
 	background: #3F3567;
@@ -64,10 +68,15 @@ header {
 	flex-shrink: 1;
 	display: flex;
 	justify-content: space-around;
+	list-style-type:none;
 }
 .menuList {
 	font-size: 8px;
 	flex-shrink: 1;
+}
+.menuList a {
+	text-decoration:none;
+	color: black;
 }
 #errorAdds {
 	height: 40px;
@@ -78,8 +87,10 @@ header {
 }
 #main {
 	display: flex;
+	flex-direction: column;
 	background: #EBEBEB;
 	justify-content: center;
+	align-items: center;
 }
 #mainContent {
 	background: white;
@@ -110,13 +121,13 @@ header {
 	display: flex;
 }
 #leftMain2 {
-	width: 60%;
+	width: 70%;
 	display: flex;
 	flex-direction: column;
 	padding: 2px 4px 2px 2px;
 }
 #rightMain2 {
-	width: 40%;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	padding: 2px 2px 2px 4px;
@@ -174,7 +185,7 @@ header {
 	flex-direction: column;
 }
 #followingList li {
-	height: 80px;	
+	height: 50px;	
 	display: flex;
 	align-items: center;
 	border-top: 1px solid #DDDDDD;
@@ -184,15 +195,100 @@ header {
 	flex-direction: column;
 }
 #readedHistory li {
-	height: 80px;	
+	height: 50px;	
 	display: flex;
 	align-items: center;
 	border-top: 1px solid #DDDDDD;
 }
 #hotMonthWeekDay {
-	height: 50px;	
+	height: 30px;	
 	display: flex;
 	background: #DDDDDD;
 	justify-content: center;
 	align-items: center;
+	list-style-type:none;
+}
+#hotMonthWeekDay li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px;
+}
+#hotList {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#hotList li {
+	width: 80%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+#hotList li:not(last-child) {
+	border-bottom: 5px solid #DDDDDD;
+}
+#newComment h4 {
+	height: 20px;
+	color: blue;
+	display: flex;
+	align-items: center;
+	padding-left: 4px;
+}
+#comment li {
+	height: 40px;	
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #DDDDDD;
+	padding-left: 4px;
+}
+#footerMain {
+	height: 80px;
+	width: 720px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type:none;
+}
+#footerPage {
+	background: #222222;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#imageFooter {
+	width: 40%;
+	background: #4466A3;
+}
+#footer {
+	width: 60%;
+	width: 680px;
+	display: flex;
+}
+#footer * {
+	margin: 5px;
+}
+#categorys {
+	display: flex;
+	justify-content: space-between;
+	list-style-type:none;
+}
+#categorysManga h3 {
+	color: white;
+}
+#categorys li {
+	color: white;
+	list-style-type:none;
+	font-size: 10px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+blockquote {
+	color: white;
+	width: 680px;
+	display: flex;
+	align-items: center;
+	margin-left: 5px;
 }
