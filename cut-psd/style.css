@@ -571,6 +571,7 @@ header .container ul li a:hover {
 	border: 1px solid #eaeef1;
 	border-radius: 3px;
 	text-indent: 6px;
+	padding-right: 6px;
 }
 #contact .container form #message textarea {
 	display: block;
@@ -581,7 +582,7 @@ header .container ul li a:hover {
 	border-radius: 3px;
 	text-indent: 6px;
 	padding-top: 6px;
-	padding-right: 6px;
+
 }
 #contact .container form button {
 	color: white;
