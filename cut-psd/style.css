@@ -1024,7 +1024,10 @@ footer .container ul li:nth-child(5) a {
 		width: 100%;
 	}
 	footer .container p {
-		font-size: 11px;
+		font-size: 12px;
+	}
+	footer .container ul li a {
+		margin-left: 5px;
 	}
 
 }
