@@ -1001,6 +1001,9 @@ footer .container ul li:nth-child(5) a {
 	#contact h2 {
 		margin-bottom: 0px;
 	}
+	#contact div.container {
+		margin-bottom: 0px;
+	}
 	#contact .container #info {
 		margin-bottom: 15px;
 	}
@@ -1020,6 +1023,10 @@ footer .container ul li:nth-child(5) a {
 	#contact .container form button {
 		width: 100%;
 	}
+	footer .container p {
+		font-size: 11px;
+	}
+
 }
 @media screen and (max-width: 500px) {
 	header .container {
@@ -1113,9 +1120,10 @@ footer .container ul li:nth-child(5) a {
 		display: block;
 	}
 	footer .container p {
-		font-size: 11px;
+		font-size: 10px;
 		height: 40px;
 		line-height: 40px;
+		text-align: center;
 	}
 	footer .container ul {
 		height: 40px;
