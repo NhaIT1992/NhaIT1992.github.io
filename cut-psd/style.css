@@ -60,8 +60,10 @@ header {
 	height: 81px;
 }
 .container {
-	width: 1140px;
+	max-width: 1170px;
 	margin: 0px auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 header .container {
 	display: flex;
@@ -113,7 +115,7 @@ header .container ul li a:hover {
 }
 
 #banner .container div {
-	width: 654px;
+	max-width: 654px;
 }
 #banner .container div h2 {
 	margin-bottom: 22px;
@@ -144,6 +146,7 @@ header .container ul li a:hover {
 	position: absolute;
 	right: 0px;
 	bottom: 30px;
+	margin-right: 15px;
 }
 #banner .container > ul li {
 	display: inline-block;
@@ -171,7 +174,9 @@ header .container ul li a:hover {
 	padding-top: 86px;
 	padding-bottom: 100px;
 }
-
+#about .container h2 {
+	margin-bottom: 55px;
+}
 #about .container > div {
 	display: flex;
 	justify-content: space-between;
@@ -266,10 +271,14 @@ header .container ul li a:hover {
 #team #team-list > div {
 	width: calc((100% - 90px) / 4);
 }
-
+#team #team-list > div > div > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
 #team #team-list > div > div:first-child {
 	position: relative;
-	height: 300px;
+	height: auto;
 }
 #team #team-list > div .info-member {
 	height: 74px;
@@ -358,10 +367,14 @@ header .container ul li a:hover {
 	position: relative;
 	margin-bottom: 30px;
 }
-
+#work .container > div > div >  img {
+	width: 100%;
+	height: 100%;
+}
 #work .container > div > div > div {
 	display: none;
 }
+
 #work .container > div > div:hover > div {
 	position: absolute;
 	top: 0px;
@@ -416,7 +429,7 @@ header .container ul li a:hover {
 }
 #service .container > div > div {
 	width: calc((100% - 90px) / 4);
-	position: relative;ive;
+	position: relative;
 	margin-bottom: 95px;
 	text-align: center;
 }
@@ -481,6 +494,7 @@ header .container ul li a:hover {
 	width: calc((100% - 60px) / 3);
 }
 #feature .container > div > div > img {
+	width: 100%;
 	margin-bottom: 42px;
 }
 #feature .container > div > div > h4 {
@@ -517,7 +531,7 @@ header .container ul li a:hover {
 	text-indent: 100000px;
 	z-index: -1;
 }
-#contact .container {
+#contact div.container {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 100px;
@@ -557,11 +571,15 @@ header .container ul li a:hover {
 	padding-left: 6px;
 }
 #contact .container form > div {
+
 	margin-bottom: 30px;
 }
 #contact .container form #two-col {
 	display: flex;
 	justify-content: space-between;
+}
+#contact .container form #two-col > div {
+	width: calc(50% - 8px);
 }
 #contact .container form #two-col input {
 	display: block;
@@ -648,4 +666,459 @@ footer .container ul li:nth-child(5) a {
 	background-image: url(picture/social-icon/likedin.png);
 }
 
+@media screen and (max-width: 960px) {
+	header {
+		height: auto;
+	}
+	header .container {
+		display: block;
+	}
+	header .container h1,ul {
+		text-align: center;
+	}
+	#banner .container > div {
+		text-align: center;
+		max-width: 100%;
+	}
+	#banner .container > ul {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-right: 0px;
+		letter-spacing: 8px;
+	}
+	#banner .container > ul > li {
+		margin: 0px;
+	}
+	.has-first-col {
+		text-align: center;
+	}
+	.has-first-col::before {
+		display: inline-block;
+		left: auto;
+    	height: 60px;
+    	width: 60%;
+    	z-index: -1;
+    	background-color: transparent;
+    	border-bottom: 6px solid #e1e6ea;
+    	border-radius: 50%;
+	}
+	h2 {
+		justify-content: center;
+	}
+	#about .container > div > div#info {
+		width: calc((100% - 30px) / 2);
+	}
+	#about .container ol {
+		width: calc((100% - 30px) / 2);
+	}
+	#team #team-list > div .info-member h4 {
+		font-size: 15px;
+	}
+	#team #team-list > div .info-member p {
+		font-size: 13px;
+	}
+	#team #team-list > div:hover .info-member h4 {
+    	font-size: 15px;
+	}
+	#team #team-list > div:hover .info-member p {
+		font-size: 13px;
+	}
+	#work .container h2 {
+		z-index: 0;
+	}
+	#work .container h2.has-first-col::before {
+		border-color: #4e5a62;
+		background-color: transparent;
+	}
+	#work .container > div > div:hover > div > p {
+		font-size: 14px;
+	}
+	#feature .container h2 {
+		z-index: 0;
+	}
+	#feature .container h2.has-first-col::before {
+		border-color: #4e5a62;
+		background-color: transparent;
+	}
+	#feature .container > div > div {
+		text-align: center;
+	}
+	#service .container > div > div {
+		width: calc((100% - 60px) / 4);
+	}
+	#service .container > div > div > h3 {
+		font-size: 14px;
+	}
+	#contact > div {
+		padding-top: 0px; 
+	}
+	#contact > div #map {
+		position: static;
+	}
+	#contact > div > div.container {
+		display: block;
+	}
+	#contact .container #info {
+		margin-bottom: 50px;
+	}
+	#contact .container #info h3 {
+		margin-top: 50px;
+	}
+	#contact .container form {
+		padding: 0px;
+	}
+	#contact .container form #two-col {
+		display: block;
+		margin-bottom: 0px;
+	}
+	#contact .container form #two-col > div {
+     	width: 100%;
+     	margin-bottom: 30px;
+    }
+    #contact .container form #two-col input {
+    	width: 100%;
+    }
+    #contact .container form button {
+    	display: block;
+    	margin: 0px auto;
+    }
+}
 
+@media screen and (max-width: 768px) {
+
+	header .container h1 {
+		border-bottom: 1px solid #434c58;
+	}
+	header .container ul li {
+		height: 50px;
+		line-height: 50px;
+	}
+	header .container ul li a {
+		margin-left: 0px;
+		font-size: 11px;
+		padding: 4px 8px;
+	}
+	#banner .container {
+    	padding-top: 80px;
+    	padding-bottom: 100px;
+	}
+	.pad-top {
+    	padding-top: 0px;
+	}
+	#about .container {
+  	  	padding-top: 40px;
+ 	   	padding-bottom: 40px;
+	}
+	#about .container h2 {
+ 	   	margin-bottom: 30px;
+	}
+	#about .container > div {
+    	display: block;
+	}
+	#about .container > div > div#info {
+    	width: 100%;
+    	margin-bottom: 50px;
+	}
+	#about .container #info p.last {
+    	margin-bottom: 20px;
+	}
+    #about .container ol {
+    	width: 100%;
+    	text-align: center;
+	}
+	#about .container ol li {
+		padding-left: 0px;
+	}
+	#about .container ol li:before {
+		display: none;
+	}
+	#team.container {
+  	  	padding-top: 40px;
+ 	   	padding-bottom: 40px;
+	}
+	#team.container h2 {
+ 	   	margin-bottom: 30px;
+	}
+	#team #team-list {
+		flex-wrap: wrap;
+		margin-bottom: 0px;
+	}
+	#team #team-list > div {
+    	width: calc(50% - 15px);
+    	margin-bottom: 30px;
+	}
+	#team #team-list > div ul {
+		position: static;
+		background-color: transparent;
+		justify-content: space-between;
+	}
+	#team #team-list > div > div > img {
+		z-index: -1;
+	}
+	#team #team-list > div > div ul {
+		z-index: 1;
+		display: flex;
+		height: 50px;
+	}
+	#team #team-list > div > div ul li {
+		display: block;
+		height: 100%;
+		width: 33%;
+	}
+	#team #team-list > div:hover {
+		display: none;
+	}
+	#team #team-list > div > div ul li a:hover {
+		display: none;
+	}
+	#team #team-list > div > div ul li a {
+    	display: inline-block;
+    	height: 100%;
+    	width: 100%;
+    	text-indent: 10000000px;
+    	background: #e1e6ea url(picture/social-icon/twitter.png) no-repeat center center;
+	}
+	#team #team-list > div ul li:nth-child(1) a {
+    	background-image: url(picture/social-icon/twitter.png);
+	}
+	#team #team-list > div ul li:nth-child(2) a {
+    	background-image: url(picture/social-icon/facebook.png);
+	}
+	#team #team-list > div ul li:nth-child(3) a {
+    	background-image: url(picture/social-icon/likedin.png);
+	}
+	#team #team-list > div .info-member {
+		background-color: #3a454d;
+	}
+	#team #team-list > div .info-member h4 {
+		color: white;
+	}
+	#team #team-list > div .info-member p {
+		color: #cbcbcb;
+	}
+	#work .container {
+  	  	padding-top: 40px;
+ 	   	padding-bottom: 40px;
+	}
+	#work .container h2 {
+ 	   	margin-bottom: 30px;
+	}
+	#work .container > div {
+		padding-bottom: 0px;
+	}
+	#work .container > div > div {
+    	width: calc((100% - 30px) / 2);
+    	height: auto;
+    	margin-bottom: 30px;
+    	display: flex;
+    	flex-direction: column;
+    	position: static;
+	}
+	#work .container > div > div:hover {
+		display: none;
+	}
+	#work .container > div > div > img {
+		display: block;
+		height: auto;
+	}
+	#work .container > div > div > div {
+		height: auto;
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	#work .container > div > div > div > a {
+	    display: block;
+	    width: 100%;
+	    text-indent: 1000000px;
+	    height: 50px;
+	    background: rgb(0,0,0,0.5) url(picture/plus.png) no-repeat center center;
+	}
+	#work .container > div > div > div > p {
+	    display: block;
+	    text-align: center;
+	    background: rgb(0,0,0,0.5);
+	    color: white;
+	    width: 100%;
+	    font-size: 16px;
+	    height: 30px;
+	    line-height: 30px;
+	    text-transform: uppercase;
+	    border-bottom: 1px solid #808082;
+    }
+    #work .container .button {
+    	padding-bottom: 0px;
+	}
+	#service .container {
+  	  	padding-top: 40px;
+ 	   	padding-bottom: 40px;
+	}
+	#service .container h2 {
+ 	   	margin-bottom: 30px;
+	}
+	#service .container > div > div {
+    	width: calc((100% - 30px) / 2);
+    	margin-bottom: 30px;
+	}
+	#feature {
+		padding-top: 0px;
+	}
+	#feature .container {
+  	  	padding-top: 40px;
+ 	   	padding-bottom: 40px;
+	}
+	#feature .container h2 {
+ 	   	margin-bottom: 30px;
+	}
+	#feature .container > div {
+    	display: block;
+	}	
+    #feature .container > div > div {
+    	width: 100%;
+    	margin-bottom: 40px;
+	}
+	#feature .container > div > div:last-child {
+		margin-bottom: 0px;
+	}
+	#feature .container > div > div > img {
+		margin-bottom: 5px;
+	}
+	#feature .container > div > div > h4 {
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+	#feature .container > div > div > p {
+		margin-bottom: 0px;
+	}
+	#contact {
+		padding-top: 0px;
+	}
+	#contact .container {
+  	  	padding-top: 40px;
+ 	   	padding-bottom: 40px;
+	}
+	#contact h2 {
+		margin-bottom: 0px;
+	}
+	#contact .container #info {
+		margin-bottom: 15px;
+	}
+	#contact .container #info h3 {
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+	#contact .container #info p {
+		margin-bottom: 5px;
+	}
+	#contact .container form #two-col > div {
+		margin-bottom: 10px;
+	}
+	#contact .container form label {
+		margin-bottom: 5px;
+	}
+	#contact .container form button {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 500px) {
+	header .container {
+		display: flex;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	header .container h1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+		height: auto;
+		line-height: auto;
+		border-right: 1px solid #434c58;
+		border-bottom: none;
+	}
+	header .container ul {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+	header .container ul li {
+		height: 30px;
+		line-height: 30px;
+	}
+	header .container ul li a {
+		font-size: 15px;
+	}
+	#banner .container {
+    	padding-top: 40px;
+    	padding-bottom: 50px;
+	}
+	#banner .container div {
+		margin-bottom: 30px;
+	}
+	#banner .container div h2 {
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+	#banner .container div p {
+		margin-bottom: 15px;
+	}
+	#banner .container div ul li a {
+		padding: 5px 10px 5px 10px;
+	}
+	#about .container #info ul li a {
+    	height: 50px;
+    	width: 50px;
+    	line-height: 50px;
+	}
+	
+	.has-first-col::before {
+    	height: 150%;
+	}
+	#team #team-list {
+		display: block;
+	}
+	#team #team-list > div {
+		width: 100%;
+	}
+	#team #team-list > div .info-member {
+		text-align: center;
+	}
+	#work .container > div {
+		display: block;
+	}
+	#work .container > div > div {
+		width: 100%;
+	}
+
+	#service .container > div {
+		display: block;
+	}
+	#work .container .button {
+		display: flex;
+	}
+	#service .container > div > div {
+		width: 100%;
+	}
+	#contact .has-first-col::before {
+		height: 80%;
+	}
+	#contact div.container {
+		margin-bottom: 0px;
+	}
+	footer {
+		height: auto;
+	}
+	footer .container {
+		display: block;
+	}
+	footer .container p {
+		font-size: 11px;
+		height: 40px;
+		line-height: 40px;
+	}
+	footer .container ul {
+		height: 40px;
+		justify-content: center;
+	}
+}
