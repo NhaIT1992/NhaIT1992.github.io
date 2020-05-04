@@ -581,6 +581,7 @@ header .container ul li a:hover {
 	border-radius: 3px;
 	text-indent: 6px;
 	padding-top: 6px;
+	padding-right: 6px;
 }
 #contact .container form button {
 	color: white;
