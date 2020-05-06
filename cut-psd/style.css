@@ -786,7 +786,7 @@ footer .container ul li:nth-child(5) a {
 }
 
 @media screen and (max-width: 768px) {
-
+	
 	header .container h1 {
 		border-bottom: 1px solid #434c58;
 	}
@@ -866,12 +866,6 @@ footer .container ul li:nth-child(5) a {
 		height: 100%;
 		width: 33%;
 	}
-	#team #team-list > div:hover {
-		display: none;
-	}
-	#team #team-list > div > div ul li a:hover {
-		display: none;
-	}
 	#team #team-list > div > div ul li a {
     	display: inline-block;
     	height: 100%;
@@ -887,6 +881,40 @@ footer .container ul li:nth-child(5) a {
 	}
 	#team #team-list > div ul li:nth-child(3) a {
     	background-image: url(picture/social-icon/likedin.png);
+	}
+	#team #team-list > div:hover > div ul {
+		z-index: 1;
+		display: flex;
+		height: 50px;
+	}
+	#team #team-list > div:hover > div ul li {
+		display: block;
+		height: 100%;
+		width: 33%;
+	}
+	#team #team-list > div:hover ul li:nth-child(1) a {
+    	display: inline-block;
+    	height: 100%;
+    	width: 100%;
+    	text-indent: 10000000px;
+    	background: #e1e6ea url(picture/social-icon/twitter.png) no-repeat center center;
+	}
+	#team #team-list > div:hover ul li:nth-child(2) a {
+    	display: inline-block;
+    	height: 100%;
+    	width: 100%;
+    	text-indent: 10000000px;
+    	background: #e1e6ea url(picture/social-icon/facebook.png) no-repeat center center;
+	}
+	#team #team-list > div:hover ul li:nth-child(3) a {
+    	display: inline-block;
+    	height: 100%;
+    	width: 100%;
+    	text-indent: 10000000px;
+    	background: #e1e6ea url(picture/social-icon/likedin.png) no-repeat center center;
+	}
+	#team #team-list > div:hover .info-member p {
+		color: #cbcbcb;
 	}
 	#team #team-list > div .info-member {
 		background-color: #3a454d;
@@ -915,9 +943,7 @@ footer .container ul li:nth-child(5) a {
     	flex-direction: column;
     	position: static;
 	}
-	#work .container > div > div:hover {
-		display: none;
-	}
+	
 	#work .container > div > div > img {
 		display: block;
 		height: auto;
@@ -947,6 +973,33 @@ footer .container ul li:nth-child(5) a {
 	    text-transform: uppercase;
 	    border-bottom: 1px solid #808082;
     }
+	#work .container > div > div:hover > div {
+		position: static;
+		height: auto;
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	#work .container > div > div:hover > div > a {
+		display: block;
+	    width: 100%;
+	    text-indent: 1000000px;
+	    height: 50px;
+	    background: rgb(0,0,0,0.5) url(picture/plus.png) no-repeat center center;
+	}
+	#work .container > div > div:hover > div > p {
+		display: block;
+		text-align: center;
+	    background: rgb(0,0,0,0.5);
+	    color: white;
+	    width: 100%;
+	    font-size: 16px;
+	    height: 30px;
+	    line-height: 30px;
+	    text-transform: uppercase;
+	    border-bottom: 1px solid #808082;
+	    padding-left: 0px;
+	}
     #work .container .button {
     	padding-bottom: 0px;
 	}
